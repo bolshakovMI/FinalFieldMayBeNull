@@ -11,7 +11,7 @@ public class App {
 
     static void methodWithStaticHolder() throws InterruptedException {
         Thread thread = new Thread(new Runnable() {
-            @Override
+
             public void run() {
                 try {
                     SimpleObject simpleObject = new SimpleObject("строка есть");
@@ -34,7 +34,7 @@ public class App {
     static void methodWithInstanceHolder() throws InterruptedException {
         CollectionHolder2 holder = new CollectionHolder2();
         Thread thread = new Thread(new Runnable() {
-            @Override
+
             public void run() {
                 try {
                     SimpleObject2 simpleObject = new SimpleObject2("строка есть", holder);
